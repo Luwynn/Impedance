@@ -7,7 +7,7 @@
 .dd{
     line-height:40px;
     display: table;
-    position:fixed;
+    position: relative;
     padding:0;
     margin:0;
     top:0;
@@ -124,6 +124,22 @@
 	transition-duration: 0.4s;
 }
 
+.hatred{
+	width: 1800px;
+	height: 200px;
+	background-color:#a90000;
+	border:none;
+	cursor:pointer;
+	color:#000;
+	display:inline-block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:72px;
+	font-weight:bold;
+	padding:11px 23px;
+	margin:30px;
+	transition-duration: 0.4s;
+}
+
 .dd button:active {
 	position:relative;
 	top:1px;
@@ -194,16 +210,7 @@
 	<button class="hunter" onclick="audioPlay('audio17')">Dageroth</button>
 	<audio id="audio17" src="audio/Dageroth.mp3" ></audio>
 
-	<button class="hunter" onclick="audioPlay('audio18')">3 Aralık Erethrus Darbesi</button>
-	<audio id="audio18" src="audio/3 Aralık Erethrus Darbesi.mp3" ></audio>
-
 	<!-- Ata End-->
-
-	<button class="priest" onclick="audioPlay('audio19')">Cenk Heal</button>
-	<audio id="audio19" src="audio/Cenk Heal.mp3" ></audio>
-
-	<!-- Cenk End-->
-
 	<button class="warrior" onclick="audioPlay('audio20')">Barış AMK</button>
 	<audio id="audio20" src="audio/Barış Amına Korum.mp3" ></audio>
 
@@ -281,8 +288,14 @@
 
 	<!-- Musa End-->
 
-	<button class="paladin" onclick="audioPlay('audio43')">Raid Motive</button>
-	<audio id="audio43" src="audio/Levent Her Pull.mp3" ></audio>
+	
+
+	<audio id="dummy" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
+</div>
+
+<div class="dd">
+	<button class="hatred" onclick="audioPlay('audio43')">Hatred</button>
+	<audio id="audio43" src="audio/Hatred.mp3" ></audio>
 
 	<audio id="dummy" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
 </div>
